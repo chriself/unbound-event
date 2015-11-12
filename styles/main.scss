@@ -1,0 +1,47 @@
+$purple: #333040;
+
+body {
+    margin: 0;
+    // cursor:none;
+}
+
+.rsArrow {
+    display: none !important;
+}
+
+.work-life {
+    display: flex;
+    &:after  {
+        z-index: -1;
+        background-color: $purple;
+        content: "";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url('../img/Cs.png');
+        background-size: 120px 120px;
+    }
+    h2 {
+        margin: 50px 20px;
+        font-family:"TrasandinaBlack";
+        font-size: 365px;
+        line-height: 0.73;
+        &.small {
+            margin: 0;
+            font-size: 140px;
+            line-height: 1;
+        }
+    }
+    .block {
+        width: 100%;
+        position: absolute;
+        background-color: $purple;
+        text-align: center;
+        top: 50%;
+        margin-top: -90px;
+        height: 150px;
+        padding-top: 30px;
+    }
+}
