@@ -52,6 +52,7 @@ body {
         font-size: 345px;
         font-size: 23.5vw;
         line-height: 0.73;
+        padding: 0 2vw;
         &.small {
             padding: 3vw 0 1.5vw;
             font-size: 10vw;
@@ -95,7 +96,7 @@ body {
     justify-content: space-between;
     color:$orange;
     font-size: 2vw;
-    padding: 1.5vw 1.5vw 1vw;
+    padding: 1.3vw 1.5vw 1vw;
     background-color: $purple;
 }
 
@@ -118,11 +119,28 @@ body {
     }
 
     .climb__tile, .climb-slideshow__panel {
-        border-radius: 2vw !important;
-        border-bottom-left-radius: 0 !important;
-        border-top-right-radius: 0 !important;
+        border-radius: 0 !important;
+        border-bottom-right-radius: 2vw !important;
         box-shadow:none !important;
     }
+
+    .climb__tile, .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
+        border-top-left-radius:2vw !important;
+    }
+
+    .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
+        padding: 45px;
+    }
+
+    .climb__author img {
+        margin-left: 8px;
+    }
+
+    .climb__tile__author__username {
+        line-height: 38px !important;
+        text-transform: uppercase;
+    }
+
 
     .climb__message {
         margin-bottom: 30px;
@@ -133,7 +151,9 @@ body {
         }
     }
     .climb-slideshow {
-
+        .climb__image {
+            max-height: 77vh;
+        }
     }
 }
 

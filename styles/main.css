@@ -38,7 +38,8 @@ body {
   .work-life h2 {
     font-size: 345px;
     font-size: 23.5vw;
-    line-height: 0.73; }
+    line-height: 0.73;
+    padding: 0 2vw; }
     .work-life h2.small {
       padding: 3vw 0 1.5vw;
       font-size: 10vw;
@@ -74,7 +75,7 @@ body {
   justify-content: space-between;
   color: #FBB040;
   font-size: 2vw;
-  padding: 1.5vw 1.5vw 1vw;
+  padding: 1.3vw 1.5vw 1vw;
   background-color: #333040; }
 
 .climb-feed {
@@ -88,15 +89,25 @@ body {
   .climb-feed .climb__tile, .climb-feed .climb__tile__content, .climb-feed .climb-slideshow__panel {
     background-color: #FBB040; }
   .climb-feed .climb__tile, .climb-feed .climb-slideshow__panel {
-    border-radius: 2vw !important;
-    border-bottom-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 2vw !important;
     box-shadow: none !important; }
+  .climb-feed .climb__tile, .climb-feed .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
+    border-top-left-radius: 2vw !important; }
+  .climb-feed .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
+    padding: 45px; }
+  .climb-feed .climb__author img {
+    margin-left: 8px; }
+  .climb-feed .climb__tile__author__username {
+    line-height: 38px !important;
+    text-transform: uppercase; }
   .climb-feed .climb__message {
     margin-bottom: 30px; }
     .climb-feed .climb__message a {
       white-space: normal;
       max-width: 100%; }
+  .climb-feed .climb-slideshow .climb__image {
+    max-height: 77vh; }
 
 .image {
   background-size: cover;
