@@ -8,8 +8,7 @@ body {
   margin: 0;
   font-family: "TrasandinaBlack", sans-serif;
   color: #FBB040;
-  background-color: #333040;
-  cursor: none; }
+  background-color: #333040; }
 
 .rsArrow {
   display: none !important; }
@@ -55,17 +54,17 @@ body {
   content: "";
   background-image: url("../img/worklife.png");
   width: 10vw;
-  height: 7vw;
+  height: 11vh;
   display: block;
   background-size: 100%;
   position: absolute;
-  top: 2vw;
+  top: 2vh;
   left: 2vw;
   background-repeat: no-repeat;
   z-index: 100; }
 .logo.sponsor:before {
   background-image: url("../img/worklife-sponsor.png");
-  height: 11vw; }
+  height: 14hw; }
 
 .footer {
   z-index: 100;
@@ -82,7 +81,7 @@ body {
 
 .climb-feed {
   font-family: "TrasandinaBold", sans-serif;
-  font-size: 1.3vw; }
+  font-size: 2.0vh; }
   .climb-feed a {
     color: black;
     text-decoration: none; }
@@ -90,6 +89,8 @@ body {
     display: none; }
   .climb-feed .climb__tile, .climb-feed .climb__tile__content, .climb-feed .climb-slideshow__panel {
     background-color: #FBB040; }
+  .climb-feed .climb-slideshow__panel {
+    min-width: 450px; }
   .climb-feed .climb__tile, .climb-feed .climb-slideshow__panel {
     border-radius: 0 !important;
     border-bottom-right-radius: 2vw !important;
@@ -100,14 +101,18 @@ body {
     padding: 45px;
     max-height: 80vh;
     overflow: hidden; }
+  .climb-feed .climb-slideshow__slide--has-image .climb__message {
+    font-size: 70%; }
   .climb-feed .climb__author img {
     margin-left: 8px; }
   .climb-feed .climb__tile__author__username {
     line-height: 38px !important;
     text-transform: uppercase; }
-  .climb-feed .climb__tile .climb__image {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+  .climb-feed .climb__tile {
+    height: 60vh !important; }
+    .climb-feed .climb__tile .climb__image {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
   .climb-feed .climb__tile__content {
     z-index: 10; }
   .climb-feed .climb__message {
@@ -116,7 +121,8 @@ body {
       white-space: normal;
       max-width: 100%; }
   .climb-feed .climb-slideshow .climb__image {
-    max-height: 77vh; }
+    max-height: 77vh;
+    min-height: 20vh; }
 
 .image {
   background-size: cover;
@@ -126,7 +132,7 @@ body {
     background-size: 316px 280px; }
 
 .center {
-  width: 70vw;
+  width: 70hw;
   text-align: center; }
   .center img {
     max-height: 20vw; }

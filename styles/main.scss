@@ -16,7 +16,7 @@ body {
     font-family:"TrasandinaBlack", sans-serif;
     color:$orange;
     background-color: $purple;
-    cursor:none;
+    //cursor:none;
 }
 
 .rsArrow {
@@ -73,18 +73,18 @@ body {
         content: "";
         background-image: url("../img/worklife.png");
         width: 10vw;
-        height: 7vw;
+        height: 11vh;
         display: block;
         background-size: 100%;
         position: absolute;
-        top: 2vw;
+        top: 2vh;
         left: 2vw;
         background-repeat: no-repeat;
         z-index: 100;
     }
     &.sponsor:before {
         background-image: url("../img/worklife-sponsor.png");
-        height: 11vw;
+        height: 14hw;
     }
 }
 
@@ -105,7 +105,7 @@ body {
 
 .climb-feed {
     font-family:"TrasandinaBold", sans-serif;
-    font-size: 1.3vw;
+    font-size: 2.0vh;
 
     a {
         color: black;
@@ -118,6 +118,10 @@ body {
 
     .climb__tile, .climb__tile__content, .climb-slideshow__panel {
         background-color: $orange;
+    }
+
+    .climb-slideshow__panel {
+        min-width: 450px;
     }
 
     .climb__tile, .climb-slideshow__panel {
@@ -136,6 +140,10 @@ body {
         overflow: hidden;
     }
 
+    .climb-slideshow__slide--has-image .climb__message {
+        font-size: 70%;
+    }
+
     .climb__author img {
         margin-left: 8px;
     }
@@ -146,6 +154,7 @@ body {
     }
 
     .climb__tile {
+        height: 60vh !important;
         .climb__image {
             border-top-left-radius:0;
             border-top-right-radius: 0;
@@ -168,6 +177,7 @@ body {
     .climb-slideshow {
         .climb__image {
             max-height: 77vh;
+            min-height: 20vh;
         }
     }
 }
@@ -182,7 +192,7 @@ body {
 }
 
 .center {
-    width: 70vw;
+    width: 70hw;
     text-align: center;
     img {
         max-height: 20vw;
