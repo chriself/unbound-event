@@ -39,8 +39,10 @@ body {
     font-size: 345px;
     font-size: 23.5vw;
     line-height: 0.73;
-    padding: 0 2vw; }
+    padding: 0 2vw;
+    transform: translate(0, 20px); }
     .work-life h2.small {
+      transform: translate(0, 0);
       padding: 3vw 0 1.5vw;
       font-size: 10vw;
       line-height: 1; }
@@ -101,6 +103,11 @@ body {
   .climb-feed .climb__tile__author__username {
     line-height: 38px !important;
     text-transform: uppercase; }
+  .climb-feed .climb__tile .climb__image {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .climb-feed .climb__tile__content {
+    z-index: 10; }
   .climb-feed .climb__message {
     margin-bottom: 30px; }
     .climb-feed .climb__message a {
