@@ -1,39 +1,117 @@
+@font-face {
+  font-family: 'TrasandinaBlack';
+  src: url("../fonts/TrasandinaBlack.otf"); }
+@font-face {
+  font-family: 'TrasandinaBold';
+  src: url("../fonts/TrasandinaBold.otf"); }
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "TrasandinaBlack", sans-serif;
+  color: #FBB040;
+  background-color: #333040; }
 
 .rsArrow {
   display: none !important; }
 
+.rsContent {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.rsSlide {
+  background: #333040 !important; }
+
 .work-life {
-  display: flex; }
-  .work-life:after {
+  width: 100%; }
+  .work-life:before {
     z-index: -1;
-    background-color: #333040;
     content: "";
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #333040;
     background-image: url("../img/Cs.png");
     background-size: 120px 120px; }
   .work-life h2 {
-    margin: 50px 20px;
-    font-family: "TrasandinaBlack";
-    font-size: 365px;
+    font-size: 345px;
+    font-size: 23.5vw;
     line-height: 0.73; }
     .work-life h2.small {
-      margin: 0;
-      font-size: 140px;
+      padding: 3vw 0 1.5vw;
+      font-size: 10vw;
       line-height: 1; }
   .work-life .block {
     width: 100%;
-    position: absolute;
     background-color: #333040;
-    text-align: center;
-    top: 50%;
-    margin-top: -90px;
-    height: 150px;
-    padding-top: 30px; }
+    text-align: center; }
+
+.logo:before {
+  content: "";
+  background-image: url("../img/worklife.png");
+  width: 10vw;
+  height: 7vw;
+  display: block;
+  background-size: 100%;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  background-repeat: no-repeat;
+  z-index: 100; }
+.logo.sponsor:before {
+  background-image: url("../img/worklife-sponsor.png");
+  height: 11vw; }
+
+.footer {
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #FBB040;
+  font-size: 2vw;
+  padding: 1.5vw 1.5vw 1vw;
+  background-color: #333040; }
+
+.climb-feed {
+  font-family: "TrasandinaBold", sans-serif;
+  font-size: 1.3vw; }
+  .climb-feed a {
+    color: black;
+    text-decoration: none; }
+  .climb-feed .climb-social-badge {
+    display: none; }
+  .climb-feed .climb__tile, .climb-feed .climb__tile__content, .climb-feed .climb-slideshow__panel {
+    background-color: #FBB040; }
+  .climb-feed .climb__tile, .climb-feed .climb-slideshow__panel {
+    border-radius: 2vw !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    box-shadow: none !important; }
+  .climb-feed .climb__message {
+    margin-bottom: 30px; }
+    .climb-feed .climb__message a {
+      white-space: normal;
+      max-width: 100%; }
+
+.image {
+  background-size: cover;
+  background-position: 50% 50%; }
+  .image.pattern {
+    background-position: 0 0;
+    background-size: 316px 280px; }
+
+.center {
+  width: 70vw;
+  text-align: center; }
+  .center img {
+    max-height: 20vw; }
+  .center h3 {
+    font-size: 4vw;
+    line-height: 0.9;
+    color: #333040; }
 
 /*# sourceMappingURL=main.css.map */
