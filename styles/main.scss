@@ -132,6 +132,8 @@ body {
 
     .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
         padding: 45px;
+        max-height: 80vh;
+        overflow: hidden;
     }
 
     .climb__author img {

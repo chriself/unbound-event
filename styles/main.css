@@ -97,7 +97,9 @@ body {
   .climb-feed .climb__tile, .climb-feed .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
     border-top-left-radius: 2vw !important; }
   .climb-feed .climb-slideshow__slide--has-no-image .climb-slideshow__panel {
-    padding: 45px; }
+    padding: 45px;
+    max-height: 80vh;
+    overflow: hidden; }
   .climb-feed .climb__author img {
     margin-left: 8px; }
   .climb-feed .climb__tile__author__username {
