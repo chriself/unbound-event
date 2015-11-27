@@ -46,6 +46,11 @@ body {
       padding: 3vw 0 1.5vw;
       font-size: 10vw;
       line-height: 1; }
+    .work-life h2.smaller {
+      transform: translate(0, 0);
+      padding: 2vw 0 1.5vw;
+      font-size: 6vw;
+      line-height: 1; }
   .work-life .block {
     width: 100%;
     background-color: #333040;
