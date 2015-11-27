@@ -44,15 +44,16 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: $purple;
-        background-image: url('../img/Cs.png');
+        // background-color: $orange;
+        background-image: url('../img/Cs-lighter.png');
         background-size: 120px 120px;
     }
     h2 {
         font-size: 345px;
-        font-size: 23.5vw;
+        font-size: 16vw;
         line-height: 0.73;
         padding: 0 2vw;
+        text-transform: uppercase;
         transform: translate(0,20px); //FIX for crappy font baseline
         &.small {
             transform: translate(0,0);
@@ -61,10 +62,7 @@ body {
             line-height: 1;
         }
         &.smaller {
-            transform: translate(0,0);
-            padding: 2vw 0 1.5vw;
-            font-size: 6vw;
-            line-height: 1;
+            font-size: 14vw;
         }
     }
     .block {
